@@ -38,4 +38,35 @@ package - CsvParser (파일구문 분석)
       ⎿ method dictionary 비교 및 체크 기능 // compareDictionary
       ⎿ method dictionary 내용으로 치환 기능 // replaceDictionary
         
+--------------------------------------------------------------
+package - CsvParser (파일구문 분석)
+  ⎿ csv
+    ⎿ CsvBody
+    ⎿ CsvHeader
+    ⎿ CsvInfo
+      ⎿ getPath
+      ⎿ getDelimiter
+      ⎿ getWrapper
+  ⎿ exception
+    ⎿ CsvFileNotFoundException
+    ⎿ DictionaryNotFoundException
+  ⎿ normalizer
+    ⎿ dictionary
+      ⎿ DictionaryFilter 
+        ⎿ compareDictionary
+        ⎿ replaceDictionary
+      ⎿ DictionaryReader
+        ⎿ read
+      ⎿ NormalizerDictionary
+        ⎿ replace
+    ⎿ Nomalizer
+  ⎿ parser
+      ⎿ FileParser
+        ⎿ parse
+      ⎿ LineParser
+        ⎿ repeatParsing
+        ⎿ findFileData
+      ⎿ ParserDisposal 
+        ⎿ removeWrapper
+        ⎿ removeBlank (x)
 ````
